@@ -1,0 +1,62 @@
+{
+  "claimRef": "CLM-2026-000004",
+  "submittedAt": "2026-11-11T10:00:00+05:30",
+  "policy": {
+    "policyNo": "MTR-MH-300400",
+    "productCode": "COMP",
+    "addOns": []
+  },
+  "vehicle": {
+    "regNo": "TN01AB1234",
+    "make": "Hyundai",
+    "model": "i20",
+    "manufactureYear": 2022,
+    "fuelType": "PETROL"
+  },
+  "claimant": {
+    "name": "Kishore Kumar",
+    "relationship": "OWNER",
+    "contact": {
+      "mobile": "9876543210",
+      "email": "kishore@example.com"
+    }
+  },
+  "incident": {
+    "date": "2025-06-15",
+    "time": "14:30:00",
+    "type": "COLLISION",
+    "location": {
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "pincode": "600001"
+    },
+    "policeReported": false,
+    "firNumber": null,
+    "description": "Vehicle damaged in a collision"
+  },
+  "garage": {
+    "garageCode": "GAR-TN-001",
+    "networkGarage": true
+  },
+  "priorClaimsInLast12Months": 0,
+  "lineItems": [
+    {
+      "lineNo": 1,
+      "partCode": "BODY001",
+      "category": "METAL",
+      "description": "Front body panel",
+      "quantity": 1,
+      "unitPrice": 40000,
+      "taxPercent": 18
+    },
+    {
+      "lineNo": 2,
+      "partCode": "GLASS001",
+      "category": "GLASS",
+      "description": "Front windshield",
+      "quantity": 1,
+      "unitPrice": 10000,
+      "taxPercent": 18
+    }
+  ]
+}
