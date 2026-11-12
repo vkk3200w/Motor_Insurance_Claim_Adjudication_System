@@ -26,9 +26,10 @@ public class FraudDetectionRule {
         int fraudScore = 0;
 
         // F01: Incident within 7 days of policy start
-        long days = ChronoUnit.DAYS.between(policyStartDate, incidentDate);
+        // F01: Incident within 30 days of policy start
+long days = ChronoUnit.DAYS.between(policyStartDate, incidentDate);
 
-        if (days >= 0 && days <= 7) {
+if (days >= 0 && days <= 30) {
             triggeredRules.add("F01");
             fraudScore += 30;
         }

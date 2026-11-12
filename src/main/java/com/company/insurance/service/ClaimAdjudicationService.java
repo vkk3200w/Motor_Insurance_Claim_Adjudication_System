@@ -149,6 +149,7 @@ public class ClaimAdjudicationService {
         };
     }
 
+
     @Transactional
     public ClaimResponse processClaim(
             ClaimRequest request,
@@ -364,7 +365,7 @@ public class ClaimAdjudicationService {
 
         // For resubmission, replace old child records.
         // Existing audit records are intentionally preserved.
-        
+
 // For resubmission, replace old child records.
 // Existing audit records are intentionally preserved.
 if (isResubmission) {
@@ -481,7 +482,7 @@ if (isResubmission) {
                 savedClaim.getCopayAmount(),
                 savedClaim.getPayableAmount(),
                 fraudFlags);
-        
+
     }
     // GET - Retrieve claim by reference
 @Transactional(readOnly = true)
@@ -511,5 +512,10 @@ public ClaimResponse getClaim(String claimRef) {
             claim.getPayableAmount(),
             flags
     );
+
 }
+
+
+
+
 }

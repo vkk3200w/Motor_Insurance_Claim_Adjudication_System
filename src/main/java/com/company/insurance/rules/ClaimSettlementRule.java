@@ -49,9 +49,9 @@ public class ClaimSettlementRule {
                 settlementBase.subtract(deductibleApplied);
 
         BigDecimal copayAmount = networkGarage
-                ? BigDecimal.ZERO
-                : afterDeductible.multiply(new BigDecimal("0.10"))
-                    .setScale(2, RoundingMode.HALF_UP);
+        ? BigDecimal.ZERO.setScale(2, RoundingMode.HALF_UP)
+        : afterDeductible.multiply(new BigDecimal("0.10"))
+            .setScale(2, RoundingMode.HALF_UP);
 
         BigDecimal payableAmount = afterDeductible
                 .subtract(copayAmount)

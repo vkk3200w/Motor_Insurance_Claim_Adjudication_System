@@ -162,7 +162,7 @@ The system supports four primary claim outcomes:
 
 | Rule Code | Description | Points |
 |---|---|---:|
-| F01 | Claim incident within 7 days of policy commencement | 30 |
+| F01 | Claim incident within 30 days of policy commencement | 30 |
 | F02 | Theft claim without FIR | 40 |
 | F03 | Two or more previous claims | 25 |
 | F04 | Claim submitted more than 30 days after incident | 15 |
